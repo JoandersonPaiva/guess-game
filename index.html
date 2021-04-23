@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bora Jogar?</title>
+    <link rel="shortcut icon" href="favicon-16x16.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <header class="flex">
+            <div class="topo">
+                <p class="repeat" onclick="repetir()">
+                    <button>De novo</button>
+                </p>
+                <p class="esplic">
+                    (Entre 1 e 20)
+                </p>
+            </div>
+            <h1 class="titulo">
+                Descubra o número
+            </h1>
+            <div class="caixa">
+                <p>?</p>
+            </div>
+            <footer class="fundo">
+                <hr>
+            </footer>
+        </header>
+    
+        <aside class="try">
+            <div class="num">
+                <input type="number" id="number" min="1" max="20" required>
+            </div>
+            <div class="submit">
+                <button id="click" type="submit" onclick="jogada()">Check!</button>
+            </div>
+        </aside>
+        <aside class="result">
+            <div class="dica">Chutando ...</div>
+            <div class="separador">&#x1F4AF Pontuação:<span id="ponto">20</span></div>
+            <div>&#x1F3C6 Pontuação Máxima: <span class="melhorPonto">0</span> </div>
+        </aside>
+        <footer class="rodape">
+            &copy;Joanderson Paiva
+        </footer>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>
